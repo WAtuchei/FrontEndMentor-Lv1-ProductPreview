@@ -41,12 +41,12 @@ body {
     .right-side {
         display: flex;
         flex-direction: column;
-        padding: 2.5rem;
+        padding: 2rem 1.5rem;
     }
         .category {
             font-family: "Montserrat", sans-serif;
             font-weight: 500;
-            font-size: 14px;
+            font-size: 12px;
             color: var(--DarkGrayish);
             letter-spacing: .5cap;
         }
@@ -98,7 +98,7 @@ body {
             padding: 1rem 0;
             background-color: var(--DarkCyan);
             font-family: "Montserrat", sans-serif;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 14px;
             text-decoration: none;
             color: var(--White);
