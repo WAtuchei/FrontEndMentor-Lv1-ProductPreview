@@ -41,7 +41,7 @@ body {
     .right-side {
         display: flex;
         flex-direction: column;
-        padding: 2rem 1.5rem;
+        padding: 2rem;
     }
         .category {
             font-family: "Montserrat", sans-serif;
