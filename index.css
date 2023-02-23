@@ -102,7 +102,12 @@ body {
             font-size: 14px;
             text-decoration: none;
             color: var(--White);
+            cursor: pointer;
         }
+            .cartBTN a { 
+                text-decoration: none;
+                color: var(--White);
+            }
             .cartBTN svg { margin-right: .5rem; }
             .cartBTN:active { background-color: var(--DarkBlue); }
 
