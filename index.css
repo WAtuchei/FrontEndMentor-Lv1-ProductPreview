@@ -27,7 +27,7 @@ body {
 }
 
 .card {
-    width: 640px;
+    width: 610px;
     display: flex;
     background-color: var(--White);
     border-radius: 10px;
@@ -54,7 +54,7 @@ body {
             font-family: 'Fraunces', serif;
             font-size: 32px;
             line-height: 1;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
         .detail {
             font-family: "Montserrat", sans-serif;
@@ -62,17 +62,18 @@ body {
             font-size: 14px;
             color: var(--DarkGrayish);
             line-height: 1.5;
-            margin-top: 1.5rem;
+            margin-top: 2rem;
         }
         .price {
             display: flex;
-            padding-top: 1.5rem;
+            padding-top: 2rem;
         }
         .new-price {
             font-family: 'Fraunces', serif;
             font-size: 32px;
             color: var(--DarkCyan);
         }
+
         .container { 
             display: flex;
             align-items: center;
@@ -87,6 +88,24 @@ body {
                 margin-left: 1rem;
             }
 
+        button { all: unset; }
+        .cartBTN {
+            max-width: 100%;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            padding: 1rem 0;
+            background-color: var(--DarkCyan);
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+            font-size: 14px;
+            text-decoration: none;
+            color: var(--White);
+        }
+            .cartBTN svg { margin-right: .5rem; }
+            .cartBTN:active { background-color: var(--DarkBlue); }
+
 .attribution {
     font-size: 16px;
     text-align: center;
@@ -99,6 +118,18 @@ body {
     }
 
 /*Media Query*/
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 615px) {
+    .card {
+        flex-direction: column;
+        width: 375px;
+    }
+    .mobile-img { 
+        display: flex !important;
+        border-radius: 10px 10px 0 0;
+    }
+    .left-side { display: none; }
+    .brand, .detail, .cartBTN { margin-top: 1rem; }
+    .price { padding-top: 1.5rem; }
 
+    .attribution { padding-bottom: 1rem; }
 }
